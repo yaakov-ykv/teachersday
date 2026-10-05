@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teachers' Day Greeting</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+<style>
+:root{--bg:#f3f1ec;--ink:#22302a;--panel:#fff;--line:#cfd6d1;--board:#24413a;--chalk:#f4f6f1;--yellow:#f2d36b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161c19;--ink:#e8ece9;--panel:#1f2824;--line:#38443f}}
+:root[data-theme="dark"]{--bg:#161c19;--ink:#e8ece9;--panel:#1f2824;--line:#38443f}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Patrick Hand","Comic Sans MS",cursive,sans-serif;font-size:18px;line-height:1.4}
+html:has(#view:not([hidden])),body:has(#view:not([hidden])){background:var(--board)}
+[hidden]{display:none!important}
+main{max-width:960px;margin:0 auto;padding:24px 16px 40px;display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:760px){main{grid-template-columns:340px 1fr;align-items:start}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+.panel h1{font-size:24px;margin:0 0 4px;font-weight:400}
+.panel p{margin:0 0 14px;opacity:.75;font-size:16px}
+label{display:block;margin:12px 0 4px}
+input,textarea{width:100%;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+input:focus,textarea:focus,button:focus-visible{outline:2px solid var(--yellow);outline-offset:1px}
+textarea{resize:vertical;min-height:160px}
+.count{font-size:15px;opacity:.75;text-align:right}
+.mode{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
+.mode label{display:flex;gap:6px;align-items:center;margin:0}
+.mode input{width:auto}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--board);color:var(--chalk);border-radius:6px;padding:8px 14px;margin-top:14px}
+.card{background:var(--board);color:var(--chalk);border:10px solid #8a6a43;border-radius:8px;padding:30px 22px;text-align:center;max-width:420px;width:100%;margin:0 auto;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.card h2{font-size:38px;line-height:1.1;margin:0 0 6px;font-weight:400;color:var(--yellow);overflow-wrap:anywhere}
+.card .cap{font-size:21px;margin:0 0 18px;overflow-wrap:anywhere}
+.qr{background:#fff;width:100%;max-width:280px;margin:0 auto;border-radius:6px;line-height:0;overflow:hidden}
+.qr svg{display:block}
+.err{color:#8a3b2e;font-size:17px;line-height:1.3;padding:24px 16px}
+.card .from{margin:18px 0 0;font-size:20px;overflow-wrap:anywhere}
+.dens{margin:12px 0 0;font-size:16px;opacity:.85}
+.hint{text-align:center;font-size:15px;opacity:.75;margin-top:12px}
+#view{min-height:100vh;background:var(--board);color:var(--chalk);display:flex;align-items:center;justify-content:center;padding:32px 22px;text-align:center}
+#view .in{max-width:620px;width:100%}
+#view h1{font-size:clamp(36px,10vw,56px);line-height:1.1;margin:0 0 20px;font-weight:400;color:var(--yellow);overflow-wrap:anywhere}
+#view p{font-size:clamp(22px,5.5vw,28px);margin:0;overflow-wrap:anywhere;white-space:pre-line}
+#view p.long{font-size:clamp(18px,4.6vw,22px);text-align:left}
+#view .vf{margin-top:24px;color:var(--yellow);text-align:center}
+#view button{background:transparent;border-color:var(--chalk)}
+</style>
+</head>
+<body>
+<div id="view" hidden>
+  <div class="in">
+    <h1 id="vT"></h1>
+    <p id="vM"></p>
+    <p class="vf" id="vF"></p>
+    <button id="back" hidden>Back to editing</button>
+  </div>
+</div>
+
+<main id="editor">
+  <section class="panel">
+    <h1>Edit your greeting</h1>
+    <p>Change the words and the card updates.</p>
+    <label for="title">Heading</label>
+    <input id="title" value="Happy Teachers' Day!" maxlength="25">
+    <label for="msg">Message</label>
+    <textarea id="msg" maxlength="1500">Abi ko sadto naghambal ka di kana magtudlo, pero subong sa diin ka? HAHAHA anyway I know your students proud kaayo kag thankful saimu as their teacher kag syempre Im proud man saimu for being our teacher sa choir bsan may discouragement pero I can see you're strong enough to be there, thats a thumbs up para saakon. Haha
+
+And I want to be honest with you nga I've been praying for a partner in life haha you know what I'm talking na siguro haha kag syempre i've been eyeing sa imu. Hindi man sa nga emotion ko lang ni but amu ni ang discernment nga nahatag saakon sang Ginoo nga kag nakita ko man b sa imu how you handle difficult things sa kabuhi kay bsan may disagreement kag we have different perspective sa mga bagay bagay ara ka dyapon kag mabatyagan ko nga ang respect wala gadula. Amu na nga for how many years nga daw na realize ko nga it seems nga daw ka comfortable kung ikaw ka storya ko i dunno if it is mutual pero amu na nabatyagan ko saimu haha kung saakon gusto taka kag I want to know you more sa tuod lang damo pko pamangkot inkaso haha pero syempre d man buot silingon nga gusto ko will nna sang Ginoo. Pero I will continue praying until kung ano sabat mo atleast nabal an mo na nga mu na plano ko. I know damo man da interested sa imu pero I don't care about them. I won't force my self saimu kay basi may gusto kaya nga iban ya haha pero gasalig ko if it is God's will it will happen. If you are interested pwedi tana ma storyahanan. HAHA</textarea>
+    <div class="count" id="count"></div>
+    <label for="from">From</label>
+    <input id="from" value="Your students" maxlength="20">
+    <label for="cap">Line above the code</label>
+    <input id="cap" value="Scan for a message" maxlength="40">
+    <label for="base">Link of this page</label>
+    <input id="base" value="https://claude.ai/artifact/HBc147mmuxA2T5FseFzhzH" inputmode="url">
+    <div class="mode" role="radiogroup" aria-label="What the code opens">
+      <label><input type="radio" name="mode" value="link" checked> Opens greeting page</label>
+      <label><input type="radio" name="mode" value="text"> Shows message as text</label>
+    </div>
+    <button id="preview" type="button">Preview what people see</button>
+  </section>
+
+  <section>
+    <div class="card" id="card">
+      <h2 id="oTitle"></h2>
+      <p class="cap" id="oCap"></p>
+      <div class="qr" id="qr"></div>
+      <p class="dens" id="dens"></p>
+      <p class="from" id="oFrom"></p>
+    </div>
+    <p class="hint">Press and hold (or right-click) the code to save it as an image.</p>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+var $=function(id){return document.getElementById(id)};
+try{if(qrcode.stringToBytesFuncs&&qrcode.stringToBytesFuncs['UTF-8'])qrcode.stringToBytes=qrcode.stringToBytesFuncs['UTF-8']}catch(e){}
+function enc(s){return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return decodeURIComponent(escape(atob(s)))}
+
+function showGreeting(t,m,f,canGoBack){
+  $('vT').textContent=t;$('vM').textContent=m;$('vM').className=m.length>250?'long':'';
+  $('vF').textContent=f?'\u2014 '+f:'';
+  $('back').hidden=!canGoBack;
+  $('view').hidden=false;$('editor').hidden=true;
+}
+$('back').onclick=function(){$('view').hidden=true;$('editor').hidden=false};
+
+function vals(){return{t:$('title').value.trim(),m:$('msg').value.trim(),f:$('from').value.trim()}}
+function qrText(){
+  var v=vals(),mode=document.querySelector('input[name=mode]:checked').value;
+  if(mode==='text')return v.m+(v.f?'\n\n\u2014 '+v.f:'');
+  var base=$('base').value.trim().split('#')[0];
+  return base+'#g='+enc(JSON.stringify([v.t,v.m,v.f]));
+}
+function render(){
+  var v=vals(),box=$('qr'),card=$('card');
+  $('oTitle').textContent=v.t;$('oCap').textContent=$('cap').value;
+  $('oFrom').textContent=v.f?'\u2014 '+v.f:'';
+  $('count').textContent=v.m.length+' / 1500';
+  box.innerHTML='';$('dens').textContent='';
+  if(!v.m){box.innerHTML='<div class="err">Type a message to make a code.</div>';return}
+  try{
+    var qr=qrcode(0,'L');qr.addData(qrText());qr.make();
+    var n=qr.getModuleCount(),d='',r,c,s=n+8;
+    for(r=0;r<n;r++)for(c=0;c<n;c++)if(qr.isDark(r,c))d+='M'+(c+4)+' '+(r+4)+'h1v1h-1z';
+    box.innerHTML='<svg viewBox="0 0 '+s+' '+s+'" width="100%" role="img" aria-label="QR code" shape-rendering="crispEdges"><rect width="'+s+'" height="'+s+'" fill="#fff"/><path d="'+d+'" fill="#1d2b25"/></svg>';
+    var big=n>57;
+    card.style.maxWidth=big?'640px':'420px';box.style.maxWidth=big?'560px':'280px';
+    $('dens').textContent=n<=57?'Easy to scan.':n<=105?'Dense code. Print it at least 8 cm wide.':'Very dense code. Print it at least 12 cm wide, or shorten the message.';
+  }catch(e){
+    box.innerHTML='<div class="err">Too long for one code. Shorten the message a little.</div>';
+  }
+}
+['title','msg','from','cap','base'].forEach(function(id){$(id).addEventListener('input',render)});
+document.querySelectorAll('input[name=mode]').forEach(function(r){r.addEventListener('change',render)});
+$('preview').onclick=function(){var v=vals();showGreeting(v.t,v.m,v.f,true)};
+
+render();
+try{
+  var h=location.hash;
+  if(h.indexOf('#g=')===0){var a=JSON.parse(dec(h.slice(3)));showGreeting(a[0],a[1],a[2],false)}
+}catch(e){}
+</script>
+</body>
+</html>

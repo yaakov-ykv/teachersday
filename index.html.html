@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Teachers' Day!</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+<style>
+:root{--board:#24413a;--chalk:#f4f6f1;--yellow:#f2d36b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--board)}
+body{margin:0;background:var(--board);color:var(--chalk);font-family:"Patrick Hand","Comic Sans MS",cursive,sans-serif;line-height:1.4}
+main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 22px;text-align:center}
+.in{max-width:620px;width:100%}
+h1{font-size:clamp(36px,10vw,56px);line-height:1.1;margin:0 0 20px;font-weight:400;color:var(--yellow);overflow-wrap:anywhere}
+p{font-size:clamp(22px,5.5vw,28px);margin:0;overflow-wrap:anywhere;white-space:pre-line}
+p.long{font-size:clamp(18px,4.6vw,22px);text-align:left}
+.from{margin-top:24px;color:var(--yellow);text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <div class="in">
+    <h1 id="t"></h1>
+    <p id="m"></p>
+    <p class="from" id="f"></p>
+  </div>
+</main>
+<script>
+var DEFAULT=["Happy Teachers' Day!",
+"Abi ko sadto naghambal ka di kana magtudlo, pero subong sa diin ka? HAHAHA anyway I know your students proud kaayo kag thankful saimu as their teacher kag syempre Im proud man saimu for being our teacher sa choir bsan may discouragement pero I can see you're strong enough to be there, thats a thumbs up para saakon. Haha\n\nAnd I want to be honest with you nga I've been praying for a partner in life haha you know what I'm talking na siguro haha kag syempre i've been eyeing sa imu. Hindi man sa nga emotion ko lang ni but amu ni ang discernment nga nahatag saakon sang Ginoo nga kag nakita ko man b sa imu how you handle difficult things sa kabuhi kay bsan may disagreement kag we have different perspective sa mga bagay bagay ara ka dyapon kag mabatyagan ko nga ang respect wala gadula. Amu na nga for how many years nga daw na realize ko nga it seems nga daw ka comfortable kung ikaw ka storya ko i dunno if it is mutual pero amu na nabatyagan ko saimu haha kung saakon gusto taka kag I want to know you more sa tuod lang damo pko pamangkot inkaso haha pero syempre d man buot silingon nga gusto ko will nna sang Ginoo. Pero I will continue praying until kung ano sabat mo atleast nabal an mo na nga mu na plano ko. I know damo man da interested sa imu pero I don't care about them. I won't force my self saimu kay basi may gusto kaya nga iban ya haha pero gasalig ko if it is God's will it will happen. If you are interested pwedi tana ma storyahanan. HAHA",
+""];
+function dec(s){s=s.replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return decodeURIComponent(escape(atob(s)))}
+var d=DEFAULT;
+try{if(location.hash.indexOf('#g=')===0){var a=JSON.parse(dec(location.hash.slice(3)));if(a&&a[1])d=a}}catch(e){}
+document.getElementById('t').textContent=d[0];
+var m=document.getElementById('m');m.textContent=d[1];m.className=d[1].length>250?'long':'';
+document.getElementById('f').textContent=d[2]?'\u2014 '+d[2]:'';
+document.title=d[0];
+</script>
+</body>
+</html>
